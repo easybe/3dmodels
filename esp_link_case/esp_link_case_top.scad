@@ -23,11 +23,11 @@ difference() {
     }
     // holes
     translate([3, 3, height - hole_h])
-        cylinder(h=hole_h, d=hole_d, false);
+        cylinder(hole_h, hole_d / 2, hole_d / 2, false);
     translate([width - 3, 3, height - hole_h])
-        cylinder(h=hole_h, d=hole_d, false);
+        cylinder(hole_h, hole_d / 2, hole_d / 2, false);
     translate([3, length - 3, height - hole_h])
-        cylinder(h=hole_h, d=hole_d, false);
+        cylinder(hole_h, hole_d / 2, hole_d / 2, false);
     translate([width - 3, length - 3, height - hole_h])
-        cylinder(h=hole_h, d=hole_d, false);
+        cylinder(hole_h, hole_d / 2, hole_d / 2, false);
 }
